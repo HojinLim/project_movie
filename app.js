@@ -38,6 +38,13 @@ const options = {
             card.appendChild(poster);
             card.appendChild(vote_average);
 
+            // 클릭 시 영화 아이디 팝업
+            card.addEventListener("click", function() {
+            // 클릭 시 실행할 동작을 여기에 작성합니다.
+            alert(`영화 id: ${movie.id}`);
+          });
+            
+
             moviesContainer.appendChild(card);
         });
     })
